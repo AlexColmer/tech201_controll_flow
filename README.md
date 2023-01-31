@@ -71,3 +71,34 @@ for num in list_1:
     else:
         print("Too soon")
 ```
+
+### while loops
+
+something that monitors data rather than iterate. use it to varify user input.
+```
+x = 0
+while x < 10:
+    print(f"it's working -> {x}")
+    x += 1
+```
+
+while loop breaks
+```
+while x < 10:
+    print(f"it's working -> {x}")
+    if x == 4:
+        break
+    x += 1
+```
+
+asking for someone's age
+```
+user_prompt = True
+while user_prompt:
+    age = input("What is your age?")
+    if age.isdigit():
+        user_prompt = False
+    else:
+        print("please provide your answer in digits")
+print(f"your age is {age}")
+```
