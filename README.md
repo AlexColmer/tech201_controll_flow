@@ -21,5 +21,53 @@ elif film_rating.lower() == "15":
     print("You must be 15 to watch 15 rated movies in the cinema")
 elif film_rating.lower() == "18":
     print("You must be 18 to watch 18 movies in the cinema") 
+else:
+    print("This is not a correct rating, please use universal, pg, 12 or 12a, 15, 18")
 ```
 there are no 'switch statements' or 'case statements' used in other languages
+
+### For loops
+
+define an iterator number and cycle through data (list or dictionary) 'for each entry in the data structure'
+```
+list_data = [1, 2, 3, 4, 5]
+embedded_lists = [[1, 2, 3], [4, 5, 6]]
+dict_data = {1: {"name": "Bronson", "money": "$0.05"}, 2: {"name": "Masha", "money": "$3.66"},
+             3: {"name": "Roscoe", "money": "$1.14"}}
+             
+for num in list_data:
+    print(num * 2)
+```
+nested for loops
+```
+for data in embedded_lists:
+    print(data)
+    for num in data:
+        print(num)
+```
+
+loops for dictionaries 
+
+```
+for item in dict_data.values():
+    for embed_value in item.values():
+        print(embed_value)
+```
+how to get a specific items in a dictionary 
+```
+for items in dict_data.values():
+    print(items["money"])
+```
+
+if statement in a for loop 
+```
+list_1 = [1, 2, 3, 4, 5]
+
+for num in list_1:
+    if num == 3:
+        print("I found three!")
+    elif num > 3:
+        print("Gone too far!")#
+    else:
+        print("Too soon")
+```
